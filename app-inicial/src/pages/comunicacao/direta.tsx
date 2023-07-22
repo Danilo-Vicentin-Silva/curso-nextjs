@@ -1,4 +1,4 @@
-import Avo from "@/components/comunicacao/direta/Avo";
+import Avo from "@/components/comunicacao/indireta/direta/Avo";
 
 const Direta = () => {
   return (
