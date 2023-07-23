@@ -1,4 +1,4 @@
-import Primeiro from "@/components/basicos/primeiro";
+import Primeiro from "@/components/basicos/Primeiro";
 
 const PrimeiraPagina = () => {
   return (

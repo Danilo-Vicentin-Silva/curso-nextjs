@@ -7,6 +7,7 @@ export const produtos: Produto[] = [
     preco: 100,
     descricao: "Descrição do Produto 1",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const produtos: Produto[] = [
     preco: 200,
     descricao: "Descrição do Produto 2",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const produtos: Produto[] = [
     preco: 300,
     descricao: "Descrição do Produto 3",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const produtos: Produto[] = [
     preco: 400,
     descricao: "Descrição do Produto 4",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ export const produtos: Produto[] = [
     preco: 500,
     descricao: "Descrição do Produto 5",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 6,
@@ -42,6 +47,7 @@ export const produtos: Produto[] = [
     preco: 600,
     descricao: "Descrição do Produto 6",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
   {
     id: 7,
@@ -49,5 +55,6 @@ export const produtos: Produto[] = [
     preco: 700,
     descricao: "Descrição do Produto 7",
     imagem: "https://source.unsplash.com/featured/300x200",
+    quantidade: 0,
   },
 ];
