@@ -1,21 +1,19 @@
-import React from "react"
-import useProcessando from "./useProcessando"
+import React from "react";
+import useProcessando from "./useProcessando";
 
 export default function useStarWars() {
   const { processando, iniciarProcessamento, finalizarProcessamento } =
-    useProcessando()
-  const [personagens, setPersonagens] = React.useState<any>([])
-
-  async function simularChamadaAPI() {}
+    useProcessando();
+  const [personagens, setPersonagens] = React.useState<any>([]);
 
   async function obterPersonagens() {
     try {
-      iniciarProcessamento()
-      const resp = await fetch("https://swapi.dev/api/people/")
-      const data = await resp.json()
-      setPersonagens(data.results)
+      iniciarProcessamento();
+      const resp = await fetch("https://swapi.dev/api/people/");
+      const data = await resp.json();
+      setPersonagens(data.results);
     } finally {
-      finalizarProcessamento()
+      finalizarProcessamento();
     }
   }
 
@@ -23,5 +21,5 @@ export default function useStarWars() {
     personagens,
     obterPersonagens,
     processando,
-  }
+  };
 }
