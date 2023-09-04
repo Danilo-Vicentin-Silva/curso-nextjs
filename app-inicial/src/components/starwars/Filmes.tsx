@@ -2,11 +2,11 @@ import { AiOutlineCheck } from "react-icons/ai"
 import React from "react"
 
 interface Props {
-  personagens: any[]
+  filmes: any[]
   selecionar: (personagem: any) => void
 }
 
-const Personagens = (props: Props) => {
+const Filmes = (props: Props) => {
   return (
     <table className="w-3/5 opacity-80 rounded-lg overflow-hidden">
       <thead>
@@ -18,7 +18,7 @@ const Personagens = (props: Props) => {
         </tr>
       </thead>
       <tbody>
-        {props.personagens.map((personagem: any, indice: number) => (
+        {props.filmes.map((personagem: any, indice: number) => (
           <tr
             className={`
               text-center
@@ -44,4 +44,4 @@ const Personagens = (props: Props) => {
   )
 }
 
-export default Personagens
+export default Filmes

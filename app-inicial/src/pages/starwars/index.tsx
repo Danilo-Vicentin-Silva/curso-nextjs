@@ -3,20 +3,19 @@ import Personagens from "@/components/starwars/Personagens"
 import useStarWars from "@/data/hooks/useStarWars"
 
 const PaginaStarWars = () => {
-  const { processando, personagens, obterPersonagens } = useStarWars()
+  const { processando, personagens, selecionarPersonagem } = useStarWars()
 
   return (
-    <div className="flex flex-col gap-5 justify-center items-center h-screen ">
+    <div className="flex flex-col gap-5 justify-center items-center h-screen relative">
       <Background />
-
-      <button onClick={obterPersonagens} className="bg-blue-500 p-2">
-        Obter
-      </button>
 
       {processando ? (
         <h1>Processado...</h1>
       ) : personagens.length > 0 ? (
-        <Personagens personagens={personagens} />
+        <Personagens
+          personagens={personagens}
+          selecionar={selecionarPersonagem}
+        />
       ) : (
         <div>Nenhum personagem encontrado</div>
       )}
