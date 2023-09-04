@@ -1,4 +1,4 @@
-import Produto from "@/model/Produto";
+import Produto from "@/model/Produto"
 
 export const produtos: Produto[] = [
   {
@@ -57,4 +57,4 @@ export const produtos: Produto[] = [
     imagem: "https://source.unsplash.com/featured/300x200",
     quantidade: 0,
   },
-];
+]

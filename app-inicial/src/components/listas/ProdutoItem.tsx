@@ -1,14 +1,14 @@
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import Produto from "@/model/Produto";
-import Image from "next/image";
+import { AiOutlineShoppingCart } from "react-icons/ai"
+import Produto from "@/model/Produto"
+import Image from "next/image"
 
 interface Props {
-  produto: Produto;
-  comprar: (produto: Produto) => void;
+  produto: Produto
+  comprar: (produto: Produto) => void
 }
 
 const ProdutoItem = (props: Props) => {
-  const { produto } = props;
+  const { produto } = props
 
   return (
     <div className="flex flex-col border border-zinc-500 rounded-md p-1">
@@ -38,7 +38,7 @@ const ProdutoItem = (props: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProdutoItem;
+export default ProdutoItem
