@@ -43,6 +43,13 @@ export default function useStarWars() {
   function selecionarPersonagem(personagem: any) {
     setPersonagem(personagem)
   }
+  React.useEffect(() => {
+    obterPersonagens()
+  }, [obterPersonagens])
+
+  React.useEffect(() => {
+    obterFilmes(personagem)
+  }, [personagem, obterFilmes])
 
   const voltar = () => {
     setPersonagem(null)
@@ -60,8 +67,12 @@ export default function useStarWars() {
   return {
     personagens,
     processando,
+<<<<<<< HEAD
     filmes,
     selecionarPersonagem,
     voltar,
+=======
+    selecionarPersonagem,
+>>>>>>> 69edcbdf07f9d45122a8a65ddf3bec67c99f2268
   }
 }
