@@ -3,3 +3,10 @@
   @apply font-bold py-2 px-4 rounded;
   @apply hover:bg-blue-600 text-white;
 }
+
+.title {
+  @apply text-5xl font-black text-color1;
+  @apply text-center;
+  @apply my-5;
+  @apply uppercase;
+}

@@ -13,6 +13,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        color1: "#0540F0",
+        color2: "#056BF0",
+        color3: "#056BF0",
+        "background-color": "#F2F2F2",
+        "text-color": "#030F26",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -21,4 +28,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
