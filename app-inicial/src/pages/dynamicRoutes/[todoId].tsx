@@ -11,18 +11,41 @@ const TodoId = () => {
         Voltar
       </Link>
       <h1 className="title">Exibindo o todo: {todoId}</h1>
-      <p>
-        Comentário: loren ipsum 1{" "}
-        <Link href={`/dynamicRoutes/${todoId}/comments/1`}>Detalhes</Link>
-      </p>
-      <p>
-        Comentário: loren ipsum 2{" "}
-        <Link href={`/dynamicRoutes/${todoId}/comments/2`}>Detalhes</Link>
-      </p>
-      <p>
-        Comentário: loren ipsum 3{" "}
-        <Link href={`/dynamicRoutes/${todoId}/comments/3`}>Detalhes</Link>
-      </p>
+      <ul className="m-5 flex flex-col gap-7">
+        <li>
+          <p>
+            Comentário: loren ipsum 1{" "}
+            <Link
+              className="m-5 botao"
+              href={`/dynamicRoutes/${todoId}/comments/1`}
+            >
+              Detalhes
+            </Link>
+          </p>
+        </li>
+        <li>
+          <p>
+            Comentário: loren ipsum 2{" "}
+            <Link
+              className="m-5 botao"
+              href={`/dynamicRoutes/${todoId}/comments/2`}
+            >
+              Detalhes
+            </Link>
+          </p>
+        </li>
+        <li>
+          <p>
+            Comentário: loren ipsum 3{" "}
+            <Link
+              className="m-5 botao"
+              href={`/dynamicRoutes/${todoId}/comments/3`}
+            >
+              Detalhes
+            </Link>
+          </p>
+        </li>
+      </ul>
     </div>
   );
 };
